@@ -15,9 +15,15 @@
     border: 1px solid #ccc;
 }
 
-#container::before,
+#container::before{
+	content: "Before Element";
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    color: #f00;
+}
 #container::after {
-    content: "Special Text";
+    content: "After Element";
     display: block;
     position: absolute;
     font-size: 20px;
